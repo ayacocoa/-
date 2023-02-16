@@ -21,8 +21,8 @@ body {
 }
 
 .item {
-    width: 200px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
     background-position: 50% 50%;
     display: inline-block;
     transition: 0.5s;
@@ -47,11 +47,13 @@ body {
 }
 
 .item:nth-child(3) {
-    left: 50%;
+    left: 80%;
+    top: 80%;
 }
 
 .item:nth-child(n+4) {
-    left: calc(50% + 220px);
+    left: calc(80% + 100px);
+    top: 80%;
 }
 
 .item .content {
@@ -93,8 +95,6 @@ body {
 }
 
 @keyframes showcontent {
-
-    /*文字动画*/
     from {
         opacity: 0;
         transform: translate(0, 100px);
@@ -124,6 +124,6 @@ body {
     transition: 0.5s;
 }
 
-.button button:hover {
+.buttons button:hover {
     background-color: blue;
 }
